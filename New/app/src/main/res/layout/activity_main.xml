@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/background">
+
+
+    <TextView
+        android:id="@+id/titleID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="form"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:textSize="50sp" />
+
+    <EditText
+        android:id="@+id/NameID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@id/titleID"
+        android:layout_marginTop="50dp"
+        android:inputType="text"
+        android:hint="Enter Name"
+        android:textColorHint="#fff"
+        android:backgroundTint="#000"
+        />
+    <EditText
+        android:id="@+id/EmailID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@id/NameID"
+        android:layout_marginTop="20dp"
+        android:inputType="textEmailAddress"
+        android:hint="Enter Email"
+        android:textColorHint="#fff"
+        android:backgroundTint="#000"
+        />
+    <EditText
+        android:id="@+id/passID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@id/EmailID"
+        android:layout_marginTop="20dp"
+        android:inputType="textPassword"
+        android:hint="Enter Password"
+        android:textColorHint="#fff"
+        android:backgroundTint="#000"
+        />
+    <EditText
+        android:id="@+id/ConfimID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@id/passID"
+        android:layout_marginTop="20dp"
+        android:inputType="textPassword"
+        android:hint="confirm Password"
+        android:textColorHint="#fff"
+        android:backgroundTint="#000"
+        />
+    <Button
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_below="@id/ConfimID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:text="submit"/>
+</RelativeLayout>
